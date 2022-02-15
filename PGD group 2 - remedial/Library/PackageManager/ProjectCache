@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637805458644807827
+      ticks: 637805570624990011
     m_Hash: 3142229009
   m_LockFileStatus:
     m_FilePath: C:/Users/megax/Documents/GitHub/sprint-0/PGD group 2 - remedial/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637805458644807827
+      ticks: 637805570625000008
     m_Hash: 4262578681
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -848,7 +848,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: tool
+  type: 
   description: 'Visual scripting is a workflow that uses visual, node-based graphs
     to design behaviors rather than write lines of C# script.
 
@@ -865,10 +865,25 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.5.0
+    - 1.5.1-pre.3
+    - 1.5.1-pre.5
+    - 1.5.1
+    - 1.5.2
+    - 1.6.0-pre.3
+    - 1.6.0
+    - 1.6.1
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.5
     - 1.7.6
+    - 1.7.7
+    - 1.8.0-pre.1
     compatible:
     - 1.7.6
-    verified: 1.7.6
+    - 1.7.7
+    verified: 1.7.7
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -893,7 +908,7 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637722460580000000
   documentationUrl: 
   hasRepository: 1
   repository:
