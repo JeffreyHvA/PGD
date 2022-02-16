@@ -23,7 +23,10 @@ public class NPC : MonoBehaviour
 
      if (Physics.Raycast(ray, out hit) &&  PlayerInRange())
      {
-        Debug.Log("Hello");
+       if (hit.transform != null)
+                 {
+                     CurrentClickedGameObject(hit.transform.gameObject);
+                 }
 
      }
    }  
@@ -32,5 +35,14 @@ public class NPC : MonoBehaviour
         {
             return Vector3.Distance(player.transform.localPosition, transform.localPosition) < range;
         }
+
+    void CurrentClickedGameObject(GameObject gameObject)
+    {
+     if(gameObject.tag=="NPC")
+     {
+          Debug.Log("Hello, I'm an NPC");
+     }
     }
+
+ }
 }

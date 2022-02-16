@@ -21,9 +21,12 @@ public class NPC2 : MonoBehaviour
      Ray ray =  Camera.main.ScreenPointToRay (Input.mousePosition);
      RaycastHit hit;
 
-     if (Physics.Raycast(ray, out hit) &&  PlayerInRange())
+    if (Physics.Raycast(ray, out hit) &&  PlayerInRange())
      {
-        Debug.Log("Hello2");
+       if (hit.transform != null)
+                 {
+                     CurrentClickedGameObject(hit.transform.gameObject);
+                 }
 
      }
    }  
@@ -32,5 +35,14 @@ public class NPC2 : MonoBehaviour
         {
             return Vector3.Distance(player.transform.localPosition, transform.localPosition) < range;
         }
+
+    void CurrentClickedGameObject(GameObject gameObject)
+    {
+     if(gameObject.tag=="NPC")
+     {
+          Debug.Log("Hello, I'm NPC 2");
+     }
     }
+
+ }
 }
